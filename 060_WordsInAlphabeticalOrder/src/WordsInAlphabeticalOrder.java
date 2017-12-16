@@ -8,16 +8,16 @@ public class WordsInAlphabeticalOrder {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         // create here an ArrayList
-        
+        //BEGIN SOLUTION
         ArrayList<String> words = new ArrayList<String>();
-        String word = "Hello";
+        String word;
         
-        while(!word.isEmpty()){
+        do{
             System.out.println("Type a word: ");
             word = reader.nextLine();
             words.add(word);
         }
-        
+        while(!word.isEmpty());
         Collections.sort(words);
         
         System.out.println("You typed the following words:");
@@ -25,5 +25,6 @@ public class WordsInAlphabeticalOrder {
         for(String i : words){
             System.out.println(i);
         }
+        //END SOLUTION
     }
 }

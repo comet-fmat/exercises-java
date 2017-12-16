@@ -1,26 +1,19 @@
 
 public class Accounts {
-    
+    //BEGIN SOLUTION
     public static void transfer(Account from, Account to, double howMuch){
             from.withdrawal(howMuch);
             to.deposit(howMuch);
         }
+    //END SOLUTION
 
     public static void main(String[] args) {
         // Code in Account.Java should not be touched!
-        // write your code here
-        
-        Account A = new Account("A", 100.0);
-        Account B = new Account("B", 0.0);
-        Account C = new Account("C", 0.0);
+        // implement a method for work with transfer
+        //remember need 2 account and 1 quantity
+        //check your code here
         
         
-        
-        
-        
-        
-        transfer(A, B, 50.0);
-        transfer(B, C, 25.0);
         
     }
 

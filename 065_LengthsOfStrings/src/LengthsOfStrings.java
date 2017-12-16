@@ -2,8 +2,11 @@ import java.util.ArrayList;
 
 public class LengthsOfStrings {
     public static ArrayList<Integer> lengths(ArrayList<String> list) {
-        ArrayList<Integer> lengthList = new ArrayList<Integer>();
+        //Method receive a world list, calcule numbers of caracter for each word
+        //aand return length list for each word
         // write code here
+        //BEGIN SOLUTION
+        ArrayList<Integer> lengthList = new ArrayList<Integer>();
         int num = 0;
         
         for(String i : list){
@@ -12,16 +15,11 @@ public class LengthsOfStrings {
         }
         
         return lengthList;
+        //END SULUTION
+        //STUB: return 0;
     }
 
     public static void main(String[] args) {
-        ArrayList<String> list = new ArrayList<String>();
-        list.add("Ciao");
-        list.add("Moi");
-        list.add("Benvenuto!");
-        list.add("badger badger badger badger");
-        ArrayList<Integer> lengths = lengths(list);
-        
-        System.out.println("The lengths of the Strings: " + lengths);
+        //check your code here
     }
 }

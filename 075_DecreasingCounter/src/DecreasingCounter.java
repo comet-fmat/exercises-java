@@ -14,16 +14,21 @@ public class DecreasingCounter {
 
     public void decrease() {
         // write here code to decrease counter value by one
+        //BEGIN SOLUTION
         if(this.value>0)
             this.value--;
     }
 
-    // and here the rest of the methods
+   
     public void reset(){
         this.value = 0;
     }
     
     public void setInitial(){
         this.value = this.init;
+      //END SOLUTION
     }
+     // and here the rest of the methods
+    //implement a method reset for set value to 0
+    //implement a method setInitial for return value to original ammount
 }

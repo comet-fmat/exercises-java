@@ -6,6 +6,7 @@ public class ReversingText {
     public static String reverse(String text) {
         // write your code here
         // note that method does now print anything, it RETURNS the reversed string
+        //BEGIN SOLUTION
         String buffer = "";
         
         for(int i=text.length()-1; i>=0;i--){
@@ -13,6 +14,8 @@ public class ReversingText {
         }
         
         return buffer;
+        //END SOLUTION
+        //STUB: return 0;
     }
 
     public static void main(String[] args) {

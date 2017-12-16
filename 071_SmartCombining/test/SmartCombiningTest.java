@@ -90,19 +90,19 @@ public class SmartCombiningTest {
         //Tarkistetaan että lista sisältää kaikki alkiot
         for (Integer i : lista1) {
             if (!yhdiste.contains(i)) {
-                fail("Listojen " + origLista1 + " ja " + origLista2 + " joukkoyhdiste ei sisältänyt lista1:n alkiota " + i);
+                fail("The list " + origLista1 + " and " + origLista2 + " combined no contains the element of list1: " + i);
             }
         }
         for (Integer i : lista2) {
             if (!yhdiste.contains(i)) {
-                fail("Listojen " + origLista1 + " ja " + origLista2 + " joukkoyhdiste ei sisältänyt lista2:n alkiota " + i);
+                fail("the list " + origLista1 + " and  " + origLista2 + " combined no contains the element of list2: " + i);
             }
         }
         //Tarkistetaan ettei lista sisällä duplikaatteja
         HashSet<Integer> apusetti = new HashSet<Integer>();
         for (Integer i : yhdiste) {
             if (!apusetti.add(i)) {
-                fail("Listojen " + origLista1 + " ja " + origLista2 + " joukkoyhdiste sisälsi alkion " + i + " useamman kuin yhden kerran.");
+                fail("The list " + origLista1 + " and " + origLista2 + "should not contain following " + i + " more than once time");
             }
         }
     }

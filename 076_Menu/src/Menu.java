@@ -3,13 +3,16 @@ import java.util.ArrayList;
 
 public class Menu {
 
+    //create method addMeal for add name of meal to meals
+    //create method printMeals for show all meals
+    //create method clearMenu for clear meals of all 
+    //BEGIN SOLUTION
     private ArrayList<String> meals;
 
     public Menu() {
         this.meals = new ArrayList<String>();
     }
 
-    // add the methods here
     public void addMeal(String meal) {
         if (!this.meals.contains(meal)){
             this.meals.add(meal);
@@ -17,10 +20,6 @@ public class Menu {
     }
     
     public void printMeals() {
-        //for (int i =0; i <meals.size(); i++){
-        //    System.out.println(meals.indexOf(i));
-        //}
-        //System.out.println(this.meals);
         for(String i : this.meals){
             System.out.println(i);
         }
@@ -29,5 +28,6 @@ public class Menu {
     public void clearMenu(){
         this.meals.clear();
     }
+    //END SOLUTION
     
 }

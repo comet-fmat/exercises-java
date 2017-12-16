@@ -6,12 +6,13 @@ public class RecurringWord {
 
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
-        // create here the ArrayList
+        //Request words until you enter a word for the second time
+        //BEGIN SOLUTION
         ArrayList<String> words = new ArrayList<String>();
         
-        String word="hello";
+        String word;
         
-        while(!word.equals("")){
+        do{
             System.out.println("Type a word: ");
             word = reader.nextLine();
             
@@ -22,8 +23,9 @@ public class RecurringWord {
                 }
             
         }
-        
+        while(!word.equals(""));
         System.out.println("You gave the word "+word+" twice");
+        //END SOLUTION
         
         
     }
